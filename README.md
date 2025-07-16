@@ -1,24 +1,36 @@
 # React + Tailwind MCP Server Template
 
-A full-stack template for building [Model Context Protocol (MCP)](https://spec.modelcontextprotocol.io/) servers with a modern React frontend. This template provides a complete development environment where your MCP server not only exposes tools and workflows to AI agents but also serves a beautiful web interface built with React and Tailwind CSS.
+A full-stack template for building
+[Model Context Protocol (MCP)](https://spec.modelcontextprotocol.io/) servers
+with a modern React frontend. This template provides a complete development
+environment where your MCP server not only exposes tools and workflows to AI
+agents but also serves a beautiful web interface built with React and Tailwind
+CSS.
 
 ## ✨ Features
 
-- **🤖 MCP Server**: Cloudflare Workers-based server with typed tools and workflows
-- **⚛️ React Frontend**: Modern React app with Vite, TanStack Router, and Tailwind CSS
-- **🎨 UI Components**: Pre-configured shadcn/ui components for rapid development
-- **🔧 Type Safety**: Full TypeScript support with auto-generated RPC client types
-- **🚀 Hot Reload**: Live development with automatic rebuilding for both frontend and backend
+- **🤖 MCP Server**: Cloudflare Workers-based server with typed tools and
+  workflows
+- **⚛️ React Frontend**: Modern React app with Vite, TanStack Router, and
+  Tailwind CSS
+- **🎨 UI Components**: Pre-configured shadcn/ui components for rapid
+  development
+- **🔧 Type Safety**: Full TypeScript support with auto-generated RPC client
+  types
+- **🚀 Hot Reload**: Live development with automatic rebuilding for both
+  frontend and backend
 - **☁️ Ready to Deploy**: One-command deployment to Cloudflare Workers
 
 ## 🚀 Quick Start
 
 ### Prerequisites
+
 - Node.js ≥18.0.0
 - Deno ≥2.0.0
 - [Deco CLI](https://deco.chat): `deno install -Ar -g -n deco jsr:@deco/cli`
 
 ### Setup
+
 ```bash
 # Install dependencies
 npm install
@@ -30,7 +42,8 @@ npm run configure
 npm run dev
 ```
 
-The server will start on `http://localhost:8787` serving both your MCP endpoints and the React frontend.
+The server will start on `http://localhost:8787` serving both your MCP endpoints
+and the React frontend.
 
 ## 📁 Project Structure
 
@@ -55,7 +68,8 @@ The server will start on `http://localhost:8787` serving both your MCP endpoints
 
 ## 🔗 Frontend ↔ Server Communication
 
-The template includes a fully-typed RPC client that connects your React frontend to your MCP server:
+The template includes a fully-typed RPC client that connects your React frontend
+to your MCP server:
 
 ```typescript
 // Typed calls to your server tools and workflows
@@ -65,8 +79,11 @@ const workflowResult = await client.workflows.MY_WORKFLOW({ input: "data" });
 
 ## 📖 Learn More
 
-This template is built for deploying primarily on top of the [Deco platform](https://deco.chat/about) which can be found at the [deco-cx/chat](https://github.com/deco-cx/chat) repository.
+This template is built for deploying primarily on top of the
+[Deco platform](https://deco.chat/about) which can be found at the
+[deco-cx/chat](https://github.com/deco-cx/chat) repository.
 
 ---
 
-**Ready to build your next MCP server with a beautiful frontend? [Get started now!](https://deco.chat)** 
+**Ready to build your next MCP server with a beautiful frontend?
+[Get started now!](https://deco.chat)**

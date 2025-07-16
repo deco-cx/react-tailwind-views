@@ -38,10 +38,19 @@ const createMyWorkflow = (env: Env) => {
 };
 
 const fallbackToView = (viewPath: string = "/") => (req: Request, env: Env) => {
+  const LOCAL_URL = "http://localhost:3000";
   const url = new URL(req.url);
-  url.pathname = viewPath;
-  const request = new Request(url.toString(), req);
-  return env.ASSETS.fetch(request);
+  const useDevServer = (req.headers.get("origin") || req.headers.get("host"))
+    ?.includes("localhost");
+
+  const request = new Request(
+    useDevServer
+      ? new URL(`${url.pathname}${url.search}`, LOCAL_URL)
+      : new URL(viewPath, req.url),
+    req,
+  );
+
+  return useDevServer ? fetch(request) : env.ASSETS.fetch(request);
 };
 
 const { Workflow, ...runtime } = withRuntime<Env>({

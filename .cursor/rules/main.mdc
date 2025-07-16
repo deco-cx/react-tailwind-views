@@ -244,7 +244,6 @@ execute: async ({ context }) => {
 ## Debugging Tips
 
 - Server logs appear in terminal during `npm run dev`
-- Frontend assets have hot refreshing builds but needs refreshing the browser to see changes
 - Use browser dev tools for frontend debugging
 
 This template provides a complete full-stack development environment for building MCP servers with modern React frontends. Focus on adding your business logic in tools and workflows while leveraging the typed RPC communication between frontend and backend.
