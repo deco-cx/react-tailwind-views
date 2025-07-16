@@ -9,7 +9,6 @@ directory = "./view-build"
 binding = "ASSETS"
 
 [deco]
-app = ""
 workspace = ""
 bindings = []
 enable_workflows = true
