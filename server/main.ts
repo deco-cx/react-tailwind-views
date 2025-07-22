@@ -38,7 +38,7 @@ const createMyWorkflow = (env: Env) => {
 };
 
 const fallbackToView = (viewPath: string = "/") => (req: Request, env: Env) => {
-  const LOCAL_URL = "http://localhost:3000";
+  const LOCAL_URL = "http://localhost:4000";
   const url = new URL(req.url);
   const useDevServer = (req.headers.get("origin") || req.headers.get("host"))
     ?.includes("localhost");
