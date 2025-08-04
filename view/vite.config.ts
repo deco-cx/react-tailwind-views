@@ -12,6 +12,7 @@ export default defineConfig({
     emptyOutDir: true,
   },
   server: {
+    strictPort: true,
     proxy: {
       "/mcp/*": {
         target: "http://localhost:8787",
