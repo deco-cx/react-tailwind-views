@@ -15,6 +15,6 @@
   },
   "devDependencies": {
     "deco-cli": "^0.11.8",
-    "wrangler": "^4.24.3"
+    "wrangler": "^4.28.0"
   }
 }
